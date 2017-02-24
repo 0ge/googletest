@@ -53,18 +53,18 @@ the Apache License, which is different from Google Mock's license.
 If you are new to the project, we suggest that you read the user
 documentation in the following order:
 
-  * Learn the [basics](../../tree/master/googletest/docs/Primer.md) of
+  * Learn the [basics](../googletest/docs/Primer.md) of
     Google Test, if you choose to use Google Mock with it (recommended).
-  * Read [Google Mock for Dummies](../../tree/master/googlemock/docs/ForDummies.md).
+  * Read [Google Mock for Dummies](../googlemock/docs/ForDummies.md).
   * Read the instructions below on how to build Google Mock.
 
 You can also watch Zhanyong's [talk](http://www.youtube.com/watch?v=sYpCyLI47rM) on Google Mock's usage and implementation.
 
 Once you understand the basics, check out the rest of the docs:
 
-  * [CheatSheet](../../tree/master/googlemock/docs/CheatSheet.md) - all the commonly used stuff
+  * [CheatSheet](../googlemock/docs/CheatSheet.md) - all the commonly used stuff
     at a glance.
-  * [CookBook](../../tree/master/googlemock/docs/CookBook.md) - recipes for getting things done,
+  * [CookBook](../googlemock/docs/CookBook.md) - recipes for getting things done,
     including advanced techniques.
 
 If you need help, please check the
@@ -79,7 +79,7 @@ posting a question on the
 Google Mock is not a testing framework itself.  Instead, it needs a
 testing framework for writing tests.  Google Mock works seamlessly
 with [Google Test](http://code.google.com/p/googletest/), but
-you can also use it with [any C++ testing framework](../../master/googlemock/docs/ForDummies.md#using-google-mock-with-any-testing-framework).
+you can also use it with [any C++ testing framework](docs/ForDummies.md#using-google-mock-with-any-testing-framework).
 
 ### Requirements for End Users ###
 
@@ -90,7 +90,7 @@ You must use the bundled version of Google Test when using Google Mock.
 You can also easily configure Google Mock to work with another testing
 framework, although it will still need Google Test.  Please read
 ["Using_Google_Mock_with_Any_Testing_Framework"](
-    ../../master/googlemock/docs/ForDummies.md#using-google-mock-with-any-testing-framework)
+    docs/ForDummies.md#using-google-mock-with-any-testing-framework)
 for instructions.
 
 Google Mock depends on advanced C++ features and thus requires a more
@@ -294,14 +294,14 @@ Library](../googletest/#choosing-a-tr1-tuple-library)".
 On platforms where the pthread library is available, Google Test and
 Google Mock use it in order to be thread-safe.  For this to work, you
 may need to tweak your compiler and/or linker flags.  Please see the
-"[Multi-threaded Tests](../googletest#multi-threaded-tests
+"[Multi-threaded Tests](../../googletest#multi-threaded-tests
 )" section in file Google Test's README for what you may need to do.
 
 If you have custom matchers defined using `MatcherInterface` or
 `MakePolymorphicMatcher()`, you'll need to update their definitions to
 use the new matcher API (
-[monomorphic](http://code.google.com/p/googlemock/wiki/CookBook#Writing_New_Monomorphic_Matchers),
-[polymorphic](http://code.google.com/p/googlemock/wiki/CookBook#Writing_New_Polymorphic_Matchers)).
+[monomorphic](http://code.google.com/p/googletest/wiki/CookBook#Writing_New_Monomorphic_Matchers),
+[polymorphic](http://code.google.com/p/googletest/wiki/CookBook#Writing_New_Polymorphic_Matchers)).
 Matchers defined using `MATCHER()` or `MATCHER_P*()` aren't affected.
 
 ### Developing Google Mock ###
@@ -338,6 +338,6 @@ patch.
 
 Happy testing!
 
-[gtest_readme]: ../googletest/README.md "googletest"
-[gtest_cmakebuild]:  ../googletest/README.md#using-cmake "Using CMake"
-[gtest_incorpcmake]: ../googletest/README.md#incorporating-into-an-existing-cmake-project "Incorporating Into An Existing CMake Project"
+[gtest_readme]: README.md "googletest"
+[gtest_cmakebuild]:  README.md#using-cmake "Using CMake"
+[gtest_incorpcmake]: README.md#incorporating-into-an-existing-cmake-project "Incorporating Into An Existing CMake Project"
